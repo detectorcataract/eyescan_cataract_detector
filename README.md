@@ -1,6 +1,21 @@
-# EyeScan ~ AI-Powered Cataract Screening Platform
+# EyeScan \~ AI-Powered Cataract Screening Platform
 
 > Early detection. Accessible screening. Powered by ensemble deep learning.
+
+
+## Research Project and Authors
+
+EyeScan is a research project exploring the use of transfer learning and soft-voting ensemble deep learning for preliminary cataract screening. The project also includes a web-based platform designed to support accessible, educational, and preliminary screening.
+
+**Research Paper Authors**
+- Mr. Mukundraj Patil
+- Ms. Piyushi Sihag
+- Mr. Roshan Jethani
+
+
+**Project Developers**
+- Ms. Piyushi Sihag
+- Mr. Roshan Jethani
 
 ---
 
@@ -10,8 +25,9 @@ Cataract is the leading cause of preventable blindness across the globe and is e
 
 The current technique of diagnosing cataract includes slit lamp biomicroscopy performed by a specially trained expert. This type of test makes cataract testing too expensive, inconvenient, and laborious for many people. As a result, patients only seek medical help once their vision gets considerably damaged.
 
-## The Solution 
-**EyeScan** is a convenient solution that uses an innovative web-based artificial intelligence platform to screen for cataracts using just an anterior eye photo. EyeScan is developed as an assistance tool for medical professionals and is aimed at educational and preliminary cataract screening.
+## The Solution
+
+**EyeScan** is a convenient solution that uses an innovative web-based artificial intelligence platform to screen for cataracts using just an anterior eye photo. EyeScan is developed as an assistance tool for medical professionals and is aimed at educational and preliminary cataract screening.
 
 ---
 
@@ -41,6 +57,7 @@ Gemini API generates a personalised screening report
 User interacts with AI chatbot for follow-up questions
         ↓
 Session saved — user can revisit previous screening history
+
 ```
 
 ### How Our Solution Works
@@ -98,40 +115,37 @@ Every screening session — including the image, prediction, confidence score, s
                     │  VGG19 +          │           │  Image validation +   │  │  Users, sessions,│
                     │  MobileNetV2      │           │  Report + Chatbot     │  │  predictions     │
                     └──────────────────┘           └──────────────────────┘  └─────────────────┘
+
 ```
 
 ---
 
 ## Key Use Cases
 
-**1. Individual Self-Screening**
-A user in a rural area photographs their eye using a smartphone and uploads it to EyeScan to get a preliminary cataract risk assessment before deciding to travel to a clinic.
+**1. Individual Self-Screening** A user in a rural area photographs their eye using a smartphone and uploads it to EyeScan to get a preliminary cataract risk assessment before deciding to travel to a clinic.
 
-**2. Community Health Workers**
-A health worker uses EyeScan during a camp to quickly screen multiple individuals, flagging those who need a referral for clinical evaluation.
+**2. Community Health Workers** A health worker uses EyeScan during a camp to quickly screen multiple individuals, flagging those who need a referral for clinical evaluation.
 
-**3. Patient Education**
-After receiving a screening result, the user interacts with the AI chatbot to understand what cataracts are, what the confidence score means, and when to see a doctor.
+**3. Patient Education** After receiving a screening result, the user interacts with the AI chatbot to understand what cataracts are, what the confidence score means, and when to see a doctor.
 
-**4. Telemedicine Support**
-A remote clinic integrates EyeScan as a first-pass screening tool before scheduling ophthalmology consultations.
+**4. Telemedicine Support** A remote clinic integrates EyeScan as a first-pass screening tool before scheduling ophthalmology consultations.
 
 ---
 
 ## Features
 
-| Feature | Description |
-|---|---|
-| Secure Authentication | JWT-based login and registration |
-| Eye Image Upload | Accepts JPEG, PNG, WebP up to 8MB |
-| Automated Image Validation | Gemini Vision rejects non-eye images before processing |
-| Dual-Model Ensemble Prediction | VGG19 + MobileNetV2 soft voting for robust classification |
-| Confidence Score | Percentage confidence displayed alongside prediction |
-| Symptom Reporting | Users log five common cataract symptoms for a personalised report |
-| AI-Generated Report | Gemini API produces a structured screening report per session |
-| Conversational Chatbot | Ask follow-up questions about results, symptoms, or eye health |
-| Session History | All past screenings stored and accessible per user |
-| Responsive Chat Interface | Clean, accessible UI optimised for both desktop and mobile |
+| **Feature**                    | **Description**                                                   |
+| ------------------------------ | ----------------------------------------------------------------- |
+| Secure Authentication          | JWT-based login and registration                                  |
+| Eye Image Upload               | Accepts JPEG, PNG, WebP up to 8MB                                 |
+| Automated Image Validation     | Gemini Vision rejects non-eye images before processing            |
+| Dual-Model Ensemble Prediction | VGG19 + MobileNetV2 soft voting for robust classification         |
+| Confidence Score               | Percentage confidence displayed alongside prediction              |
+| Symptom Reporting              | Users log five common cataract symptoms for a personalised report |
+| AI-Generated Report            | Gemini API produces a structured screening report per session     |
+| Conversational Chatbot         | Ask follow-up questions about results, symptoms, or eye health    |
+| Session History                | All past screenings stored and accessible per user                |
+| Responsive Chat Interface      | Clean, accessible UI optimised for both desktop and mobile        |
 
 ---
 
@@ -139,52 +153,52 @@ A remote clinic integrates EyeScan as a first-pass screening tool before schedul
 
 Five transfer learning architectures were trained and evaluated under identical conditions on a balanced dataset of 2,292 anterior eye images.
 
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|---|---|---|---|---|---|
-| ResNet50 | 97.09% | 97.10% | 97.09% | 97.09% | 99.63% |
-| VGG16 | 97.67% | 97.70% | 97.67% | 97.67% | 99.71% |
-| VGG19 | 97.97% | 98.01% | 97.97% | 97.96% | 99.71% |
-| MobileNetV2 | 98.26% | 98.26% | 98.26% | 98.26% | 99.52% |
-| InceptionV3 | 84.01% | 87.02% | 84.01% | 83.68% | 97.59% |
-| **Ensemble (VGG19 + MobileNetV2)** | **98.84%** | **98.86%** | **98.84%** | **98.84%** | **99.66%** |
+| **Model**                          | **Accuracy** | **Precision** | **Recall** | **F1-Score** | **ROC-AUC** |
+| ---------------------------------- | ------------ | ------------- | ---------- | ------------ | ----------- |
+| ResNet50                           | 97.09%       | 97.10%        | 97.09%     | 97.09%       | 99.63%      |
+| VGG16                              | 97.67%       | 97.70%        | 97.67%     | 97.67%       | 99.71%      |
+| VGG19                              | 97.97%       | 98.01%        | 97.97%     | 97.96%       | 99.71%      |
+| MobileNetV2                        | 98.26%       | 98.26%        | 98.26%     | 98.26%       | 99.52%      |
+| InceptionV3                        | 84.01%       | 87.02%        | 84.01%     | 83.68%       | 97.59%      |
+| **Ensemble (VGG19 + MobileNetV2)** | **98.84%**   | **98.86%**    | **98.84%** | **98.84%**   | **99.66%**  |
 
-The soft-voting ensemble had **no false negatives** on the test data, meaning there were no cataract cases classified as normal, which is the essential error to avoid in a screening process.
+The soft-voting ensemble had **no false negatives** on the test data, meaning there were no cataract cases classified as normal, which is the essential error to avoid in a screening process.
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | React.js (Vite) |
-| Backend | Flask (Python) |
-| Database | PostgreSQL |
-| ML Framework | TensorFlow / Keras |
-| AI / NLP | Google Gemini API |
-| Authentication | JWT (PyJWT + bcrypt) |
-| Frontend Deployment | Vercel |
-| Backend Deployment | AWS EC2 |
+| **Layer**           | **Technology**       |
+| ------------------- | -------------------- |
+| Frontend            | React.js (Vite)      |
+| Backend             | Flask (Python)       |
+| Database            | PostgreSQL           |
+| ML Framework        | TensorFlow / Keras   |
+| AI / NLP            | Google Gemini API    |
+| Authentication      | JWT (PyJWT + bcrypt) |
+| Frontend Deployment | Vercel               |
+| Backend Deployment  | AWS EC2              |
 
 ---
 
 ## Assumptions and Limitations
 
-- **Image type:** The system is designed for anterior segment eye images only. Non-eye images are rejected by the Gemini Vision validation layer, but image quality (blur, lighting, angle) still affects prediction accuracy.
-- **Binary classification:** The current model classifies images as either Cataract or Normal. Severity grading (mild, moderate, advanced) is not yet supported.
-- **Screening only:** EyeScan is a screening and educational tool. It does not provide a clinical diagnosis and explicitly advises users to consult a qualified ophthalmologist.
-- **In-memory session cache:** The `ANALYSES` dictionary is in-memory and resets on server restart. A production system would persist this in the database.
-- **Dataset scope:** The model was trained on publicly available internet-sourced anterior eye images. Performance on clinical-grade slit-lamp images or images from specific populations may vary.
+- **Image type:** The system is designed for anterior segment eye images only. Non-eye images are rejected by the Gemini Vision validation layer, but image quality (blur, lighting, angle) still affects prediction accuracy.
+- **Binary classification:** The current model classifies images as either Cataract or Normal. Severity grading (mild, moderate, advanced) is not yet supported.
+- **Screening only:** EyeScan is a screening and educational tool. It does not provide a clinical diagnosis and explicitly advises users to consult a qualified ophthalmologist.
+- **In-memory session cache:** The `ANALYSES` dictionary is in-memory and resets on server restart. A production system would persist this in the database.
+- **Dataset scope:** The model was trained on publicly available internet-sourced anterior eye images. Performance on clinical-grade slit-lamp images or images from specific populations may vary.
 
 ---
 
 ## Future Improvements
 
-- **GradCAM visualisation** :- Highlight the regions of the eye image that influenced the prediction, improving explainability and user trust.
-- **Severity grading** :- Extend classification to Normal / Immature Cataract / Mature Cataract.
-- **Multi-disease detection** :- Expand to glaucoma, diabetic retinopathy, and age-related macular degeneration.
-- **Mobile app** :- Native iOS and Android apps for field use by community health workers.
-- **Clinical validation** :- Partner with ophthalmologists to validate the system on real clinical data.
-- **Multilingual support** :- Extend the chatbot to support regional languages for wider accessibility.
+- **GradCAM visualisation** :- Highlight the regions of the eye image that influenced the prediction, improving explainability and user trust.
+- **Severity grading** :- Extend classification to Normal / Immature Cataract / Mature Cataract.
+- **Multi-disease detection** :- Expand to glaucoma, diabetic retinopathy, and age-related macular degeneration.
+- **Mobile app** :- Native iOS and Android apps for field use by community health workers.
+- **Clinical validation** :- Partner with ophthalmologists to validate the system on real clinical data.
+- **Multilingual support** :- Extend the chatbot to support regional languages for wider accessibility.
 
 ---
 
