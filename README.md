@@ -8,7 +8,7 @@
 EyeScan is a research project exploring the use of transfer learning and soft-voting ensemble deep learning for preliminary cataract screening. The project also includes a web-based platform designed to support accessible, educational, and preliminary screening.
 
 **Research Paper Authors**
-- Mr. Mukundraj Patil
+- Dr. Mukundraj Patil
 - Ms. Piyushi Sihag
 - Mr. Roshan Jethani
 
